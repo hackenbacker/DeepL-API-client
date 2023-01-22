@@ -1,0 +1,23 @@
+{
+  "pins" : [
+    {
+      "identity" : "urlstringbuilder",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackenbacker/URLStringBuilder",
+      "state" : {
+        "revision" : "a35835abb54e55905744af468b6b03bf55965d28",
+        "version" : "0.3.0"
+      }
+    },
+    {
+      "identity" : "webclient",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/hackenbacker/WebClient",
+      "state" : {
+        "revision" : "b57273322aa0734de55e1ad84a19aaeac1d9a72e",
+        "version" : "0.2.0"
+      }
+    }
+  ],
+  "version" : 2
+}
