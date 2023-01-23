@@ -51,7 +51,7 @@ public struct DeepLAPI {
         return try await WebClient.fetch(TranslateResponse.self, for: request)
     }
     
-    /// Retrieve usage information.
+    /// Retrieves usage information.
     /// - Returns: response of the API.
     /// - Note: https://www.deepl.com/ja/docs-api/general/get-usage/
     public static func getUsage() async throws -> UsageResponse {
@@ -70,7 +70,7 @@ public struct DeepLAPI {
         case target
     }
     
-    /// Retrieve Supported Languages (Source)
+    /// Retrieves Supported Languages (Source)
     /// - Returns: response of the API.
     /// - Note: https://www.deepl.com/ja/docs-api/general/get-languages/
     public static func getSourceLanguages() async throws -> [LanguagesResponse] {
@@ -84,7 +84,7 @@ public struct DeepLAPI {
         try await getLanguages(of: .target)
     }
     
-    /// Retrieve Supported Languages.
+    /// Retrieves Supported Languages.
     /// - Parameters:
     ///   - type: Sets whether source or target languages should be listed.
     /// - Returns: response of the API.
