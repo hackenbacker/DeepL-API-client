@@ -34,7 +34,7 @@ public struct DeepLAPI {
     ///   - targetLang: The language into which the text should be translated.
     /// - Returns: response of the API.
     /// - Attention: The total request body size must not exceed 128 KiB (128 · 1024 bytes).
-    /// - Note: https://www.deepl.com/ja/docs-api/translate-text/
+    /// - Note: https://www.deepl.com/docs-api/translate-text/
     public static func translate(_ list: [String],
                                  from sourceLang: SourceLang = .auto,
                                  to   targetLang: TargetLang) async throws -> TranslateResponse {
@@ -53,7 +53,7 @@ public struct DeepLAPI {
     
     /// Retrieves usage information.
     /// - Returns: response of the API.
-    /// - Note: https://www.deepl.com/ja/docs-api/general/get-usage/
+    /// - Note: https://www.deepl.com/docs-api/general/get-usage/
     public static func getUsage() async throws -> UsageResponse {
         var request = URLRequest(url: URL(string: API.usage)!)
         request.httpMethod = "GET"
@@ -72,14 +72,14 @@ public struct DeepLAPI {
     
     /// Retrieves Supported Languages (Source)
     /// - Returns: response of the API.
-    /// - Note: https://www.deepl.com/ja/docs-api/general/get-languages/
+    /// - Note: https://www.deepl.com/docs-api/general/get-languages/
     public static func getSourceLanguages() async throws -> [LanguagesResponse] {
         try await getLanguages(of: .source)
     }
     
     /// Retrieve Supported Languages (Target)
     /// - Returns: response of the API.
-    /// - Note: https://www.deepl.com/ja/docs-api/general/get-languages/
+    /// - Note: https://www.deepl.com/docs-api/general/get-languages/
     public static func getTargetLanguages() async throws -> [LanguagesResponse] {
         try await getLanguages(of: .target)
     }
@@ -88,7 +88,7 @@ public struct DeepLAPI {
     /// - Parameters:
     ///   - type: Sets whether source or target languages should be listed.
     /// - Returns: response of the API.
-    /// - Note: https://www.deepl.com/ja/docs-api/general/get-languages/
+    /// - Note: https://www.deepl.com/docs-api/general/get-languages/
     private static func getLanguages(of type: LanguagesType) async throws -> [LanguagesResponse] {
         let urlString = URLStringBuilder(baseURL: API.languages)
             .append(key: "type", value: type.rawValue)
