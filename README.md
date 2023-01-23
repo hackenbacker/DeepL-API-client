@@ -12,7 +12,7 @@ DeepL API client library for iOS
 
 ---
 ## Initial Setup
-1. You have to get a authentication key from [here](https://www.deepl.com/pro-api).<br>
+1. You have to get an authentication key from [here](https://www.deepl.com/pro-api).<br>
 2. Make a following file as **DeepL-API.plist**.
 ```XML
 <?xml version="1.0" encoding="UTF-8"?>
