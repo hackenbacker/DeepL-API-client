@@ -1,7 +1,6 @@
 # <img src="https://static.deepl.com/img/logo/DeepL_Logo_darkBlue_v2.svg" width=28> DeepL-API-client
 
-| <img src="https://www.deepl.com/img/press/logo_DeepL.png" width=256> | **Translator** |
-|:---|:---|
+<img src="https://user-images.githubusercontent.com/22875818/214879874-5ae0ad9c-dcdf-4cba-8ad0-96622c7780a7.png" width=512>
 
 [![Swift](https://img.shields.io/badge/Swift-5.7-orange?style=flat-square)](https://img.shields.io/badge/Swift-5.7-Orange?style=flat-square)
 [![Swift Package Manager](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)](https://img.shields.io/badge/Swift_Package_Manager-compatible-orange?style=flat-square)
