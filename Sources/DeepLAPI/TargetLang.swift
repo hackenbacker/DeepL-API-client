@@ -43,6 +43,8 @@ public enum TargetLang: String, CaseIterable {
     case SV
     /// Danish  デンマーク語
     case DA
+    /// Norwegian (Bokmål) ノルウェー語  (ブークモール)
+    case NB
     /// Polish  ポーランド語
     case PL
     /// Finnish  フィンランド語
@@ -95,6 +97,7 @@ extension TargetLang: CustomStringConvertible {
         case .KO: return "Korean"
         case .LT: return "Lithuanian"
         case .LV: return "Latvian"
+        case .NB: return "Norwegian (Bokmål)"
         case .NL: return "Dutch"
         case .PL: return "Polish"
         case .PT_BR: return "Portuguese (Brazilian)"
