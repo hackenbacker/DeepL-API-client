@@ -33,6 +33,8 @@ public enum TargetLang: String, CaseIterable {
     case PT_PT = "PT-PT"
     /// Italian  イタリア語
     case IT
+    /// Korean  韓国語
+    case KO
     /// Turkish  トルコ語
     case TR
     /// Dutch  オランダ語
@@ -90,6 +92,7 @@ extension TargetLang: CustomStringConvertible {
         case .ID: return "Indonesian"
         case .IT: return "Italian"
         case .JA: return "Japanese"
+        case .KO: return "Korean"
         case .LT: return "Lithuanian"
         case .LV: return "Latvian"
         case .NL: return "Dutch"
