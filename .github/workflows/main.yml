@@ -15,11 +15,11 @@ jobs:
     steps:
     - uses: actions/checkout@v3
     - name: Build
-      run: swift build -v
+      run: swift build -v --triple x86_64-apple-ios15.0-simulator
 
   test:
     runs-on: macos-latest
     steps:
     - uses: actions/checkout@v3
     - name: Test
-      run: swift test -v
+      run: swift test -v --enable-test-discovery --destination 'platform=iOS Simulator,name=iPhone 13'
